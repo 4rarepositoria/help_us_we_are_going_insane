@@ -214,7 +214,11 @@ label start:
                 pass
             "Stay silent":
                 #write dialogue for silent ending here
-                "dialogue"
+                scene bg black screen
+                "You stay silent, joining the rest of the team in their moment of uncomfortable stillness."
+                j " …T-this was just like back then..."
+
+"dialogue"
                 #end of dialogue for silent ending
                 pass
         jump end
