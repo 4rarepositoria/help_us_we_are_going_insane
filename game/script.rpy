@@ -196,9 +196,15 @@ label start:
     
     label after:
         scene bg cafeteria
-        "after getting to know your teammates bla bla bla"
+        "After getting to know your teammates, you could confidently say you feel much closer to all… most all of them."
+        "That lunch, when the entire club gathers together, you ask about the upcoming competition."
+        "At that moment, the members froze. A heavy silence hung around the room."
+        "Shortly after, Marry-Anne whispers dejectedly."
         scene bg blackScreen with dissolve
-        "mary anne stressy wessy :("
+        m "We’ve been on a losing streak..."
+        m "If we don’t win this competition… It’s over for us"
+        m "...And ever since our 6th member left, the club has been on the verge of disbandment..."
+        m "This is our final chance."
         menu finalchoice:
             "What will you do?"
             "Comfort the members":
