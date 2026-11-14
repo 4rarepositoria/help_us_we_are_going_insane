@@ -28,7 +28,7 @@ label start:
     "The cicadas chirped cheerfully, the sunlight shone gently, gazing down at the line of black-clad office workers bustling like ants." 
     "For a moment, everything was perfectly orderly."
     "All around, monochromatic shoes marched mechanically through the cracked pavement. Tired office workers and depressed adults trudged about, groans spilling out of their lips."
-    "{i}So this was what being an adult was like, huh?{/i}"
+    "{i}So this was what being an adult is like, huh?{/i}"
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
@@ -46,13 +46,13 @@ label start:
 
     scene bg blackScreen
     #ADD AUDIO - Rushed footsteps and opening of door.
-    "The sound of rushed footsteps pierced the silent hallways as you sprinted through the school corridors, your heart pounding in your chest." 
-    "You skidded to a halt in front of the classroom door, your hand trembling as you reached for the handle."
+    "The sound of rushed footsteps pierced the silent hallways as you sprint through the school corridors, your heart pounding in your chest." 
+    "You skid to a halt in front of the classroom door, your hand trembling as you reach for the handle."
     "The classroom door creaked open."
 
     scene bg openSeat
     u "{i}An open seat! Quick, it's mine!{/i}"
-    "You quickly slid into the empty seat, your face flushed with embarrassment as you tried to catch your breath."
+    "You quickly slid into the empty seat, your face flushed with embarrassment as you try to catch your breath."
 
 
     scene bg Classroom
@@ -93,7 +93,7 @@ label start:
     "Mary-Anne quickly turned around to leave"
     m "I\’ll see you there, Lilico."
     hide maryanne normal flipped with easeoutleft
-    u "{i}...Huh!?!?! what the helly just happened!?!?{/i}"
+    u "{i}...Huh!?!?! what the heck just happened!?!?{/i}"
     u "W-w-ait!! Mary-Anne!! I don\’t even know where the gym is!!!"
     
     scene bg gymEntrance
@@ -188,7 +188,32 @@ label start:
             jump bringMenu2
         "Prairie": 
             #write dialogue for Prairie here
-            "dialogue"
+            scene: locker room
+            "After training, you return to your locker to grab your belongings."
+            "As you finish folding your towel and placing it into your bag, you hear soft footsteps approaching the locker room. Who could it be?"
+            "You turn around to see Prairie awkwardly hiding behind the walkway into the locker room."
+            "Earlier, you wished that you could’ve continued talking before group practice began… It looked like your wish was about to be fulfilled!"
+            show Prairie awkward
+            pa "Hey Lilico… Can I talk to you about something?
+            u "Yeah sure...What\'s up?
+            pa "W-w-w-ell, I can\’t…"
+            "Prairie turns away and blushes, she's never shared this with anyone."
+            show prarie blushing
+            pa "Well... you know, I’m actually quite hard on myself when I play..."
+            show prarie awkward
+            pa "I always feel like I’m lacking compared to others… even her…"
+            show prarie normal
+            pa "Anyway… do you sometimes feel like that too? I had a good feeling about you, so I feel like I can open up about this…"
+            pa "It's been weighing me for the longest time…"
+            u "Yeah, I mean, it’s normal to feel like that sometimes… "
+            u "I’m sure you’re just overthinking it. I saw you during practice earlier and honestly, you were amazing!"
+            Show prairie blushing
+            pa "Thank you so much Lilico. I knew I could trust you with this…"
+            pa "Don’t tell anyone about our conversation today, okay?"
+
+
+
+            
             #end of dialogue for Prairie
             pass 
             jump bringMenu2
@@ -209,24 +234,70 @@ label start:
             "What will you do?"
             "Comfort the members":
                 #write dialogue for comfort ending here
-                "dialogue"
+                scene: gym
+                "…and with that, the rest of the team members immerse themselves into daily practice. They {b}bounced back{/b} and forth, dribbled left and right, and practised shooting day and night."
+                "As the season approaches, the team of rag-tag basketballers transform into an united family, ready to tackle any opponents and balls thrown in their way"
+                "Metaphorically, of course, tackling your opponents is illegal in basketball...)
+                "..."
+                "Finally, the timer ends and the results are announced…"
+                "..."
+                "The winners are.."
+                "GAKUEN HIGH SCHOOL’S BASKETBALL TEAM!"
+                show lilico happy
+                u "AAAHHH— WE DID IT!!!! WE WON!!!!"
+                scene: black screen
+                "We... did it..?!"
+                "We…. won….!"
+                "…"
+                "Carrie nods cooly, a barely noticeable corner of her mouth curving slightly upward. Next to her Pairie mutters under her breath."
+                "Wow...we really won...even after all that effort?"
+                "Overwhelmed with joy, the team celebrates the win with a tight group hug."
+                "Little did they know, from the back of the audience stand, a resentful individual glared at them silently, eyes burning with hatred."
+                que "You got lucky this time, Pairie..."
                 #end of dialogue for comfort ending
                 pass
             "Stay silent":
                 #write dialogue for silent ending here
                 scene bg black screen
                 "You stay silent, joining the rest of the team in their moment of uncomfortable stillness."
+                scene inside gym
+                Show jessica awkward
                 j " …T-this was just like back then..."
-
-"dialogue"
+                j "…"
+                j "when she was still here..."
+                u "{i}(She){/i}"
+                show pairie angry
+                pa "DON’T—"
+                show Prairie awkward
+                pa "I- I mean. Don’t think about her. She\'s already gone."
+                j "...hah..."
+                "Jessica sighs."
+                "If you were just standing a little further away, you wouldn\'t have noticed it."
+                scene: black
+                "The door slams open."
+                "Prairie comes into the room, looking unlike her usual cheerful self."
+                scene: hallway
+                "Later..."
+                show Prairie with any emotion other than her normal one
+                pa "Jessica, follow me."
+                scene: black screen
+                "You silently trail the two as they shuffle down the hallway, their conversation drifting into your ears in jagged snippets. At that moment, Prairie shoves Jessica into the wall."
+                scene: hallway
+                show jessica awkward
+                j "Stop taking it out on me Prairie..."
+                j "We all know why you\’re acting this way, you just need someone to take your anger out on right?"
+                j "You did this to her too...right? 
+                j "Don\'t look shocked, I-i know what happened to HER."
+                scene: black
+                "You hear Prairie's footsteps, she's running away...does that mean...it's true?"
                 #end of dialogue for silent ending
                 pass
         jump end
     label end:
         "The End"
-        "Credits: Thank you to (insert names and jobs)"
+        "Credits: Made by: Musarrat Mahbub - Lead coder and game formatting, Norah Shan - Lead story writer and coder, Flora Luu - Lead Artist and story writer"
         "And lastly..."
-        "Thank you so much for playing!"
+        "Thank you so much for playing! Hope you enjoyed :)"
 
     # This ends the game.
     return
