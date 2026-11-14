@@ -1,2 +1,15 @@
 Define l = Character('Lilico', color="#ff80d9")
 Define
+
+label start:
+  scene bg city path
+  "28th January."
+  "The first day of Gakuen High School."
+  "The cicadas chirped cheerfully, the sunlight shone gently, gazing down at the line of black-clad office workers bustling like ants."
+  "For a moment, everything was perfectly orderly."
+  "All around, monochromatic shoes marched mechanically through the cracked pavement."
+  "Tired office workers and depressed adults trudged about, groans spilling out of their lips."
+  "{i} So this was what being an adult was like, huh? {/i}"
+  "Breaking the monotony of the endless march, a pair of fiery red runners flickered in and out of existence."
+  "Amidst the sea of pale leather loafers, black boots and sleek khaki heels, the vibrant runners stood out like a sore thumb."
+  "…. Well… like a sore {i}/"toe/"{/i}"
