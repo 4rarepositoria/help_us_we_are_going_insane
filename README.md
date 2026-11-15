@@ -3,7 +3,7 @@ Hello! This is Flora, Norah and Musarrat, the creator of 'Gakuen High School Bas
 ---------------------------------------------------------------
 **Game Description:**
 
-Lilico just transferred to a new school… and she’s already LATE?! ON HER FIRST DAY?!
+Lilico just transferred to a new school… and she’s already LATE?! **ON HER FIRST DAY?!**
 
 Step into the shoes of Lilico as she begins her new life at Gakuen High School! Between juggling new friendships, joining the school’s basketball club, and uncovering the mystery of the missing 6th basketball member… High school life is shaping up to be anything but ordinary!
 
