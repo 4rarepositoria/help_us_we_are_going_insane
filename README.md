@@ -14,11 +14,11 @@ Find out more by playing this visual novel, NOW! ⋆˙⟡⋆˚꩜｡
 **itch.io link:** https://m1rrarr.itch.io/gakuen-high-school-basketball-club
 ---------------------------------------------------------------
 
-**Game mechanics:**
+**Game mechanic:**
 This is a visual novel. To play it, you click on the screen and wait for the next text box to appear. 
 You can also use save/load through the bottom bar :)
----------------------------------------------------------------
 
+--
 **Credit:**
 This visual novel was made by Musarrat Mahbub (Lead coder, game formatting,and story editor), Norah Shan (Lead story writer and coder), and Flora Luu (Lead Artist and story writer).
 
