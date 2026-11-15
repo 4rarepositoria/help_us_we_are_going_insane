@@ -11,7 +11,9 @@ But with the championship fast approaching, will these five girls become an unst
 Find out more by playing this visual novel, NOW! ⋆˙⟡⋆˚꩜｡
 
 ---------------------------------------------------------------
+
 **itch.io link:** https://m1rrarr.itch.io/gakuen-high-school-basketball-club
+
 ---------------------------------------------------------------
 
 **Game mechanic:**
