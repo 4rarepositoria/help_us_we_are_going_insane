@@ -32,13 +32,14 @@ label start:
     show lilico embarassed with hpunch
     u "{i}(Ugh, I'm sooo late! This is sooooo embarassing!){/i}"
 
-    scene bg black screen
-    #ADD AUDIO - Rushed footsteps and opening of door.
+    scene bg blackscreen
+    play audio "footsteps.mp3"
     "The sound of rushed footsteps pierced the silent hallways as you sprint through the school corridors, your heart pounding in your chest." 
     "You skid to a halt in front of the classroom door, your hand trembling as you reach for the handle."
+    play audio "door.mp3" volume 0.5
     "The classroom door creaked open."
 
-    scene bg openSeat
+    scene bg openseat
     u "{i}An open seat! Quick, it's mine!{/i}"
     "You quickly slid into the empty seat, your face flushed with embarrassment as you try to catch your breath."
 
@@ -198,7 +199,7 @@ label start:
             u "I-"
             show maryanne stressed at left
             "Oh my gosh! Would you look at the time, I have to go! My sister's probably furious with how long I'm taking...see you tomorrow!"
-            scene bg black screen
+            scene bg blackscreen
             "You feel like you know Mary-Anne a little better now."
             scene bg cafeteria
             #end of dialogue for Mary-Anne
@@ -216,7 +217,7 @@ label start:
             scene bg jessica talk
             show lilico awkward
             u "({i}It seems Jessica doesn't feel fully comfortable talking to me one on one...I wonder why that is...){/i}"
-            scene bg black screen
+            scene bg blackscreen
             "You hope Jessica can become more comfortable with you soon."
             scene bg cafeteria
             pass 
@@ -249,7 +250,7 @@ label start:
             "Carrie shrugs, head tilting toward the gym entrance as she pockets her hands into her hoodie."
             u "{i}(That was awkward...On that note, how did I even understand her?{/i}"
             u "{i}(It seems like she was speaking with vague gestures, almost as if she is talking telepathically somehow, although not really?){/i}"
-            scene bg black screen with dissolve
+            scene bg blackscreen with dissolve
             show lilico awkward at left
             show carrie normal at right
             "You and Carrie walk together into the gym for practice. The air around them seems thick with awkwardness..."
@@ -257,7 +258,7 @@ label start:
             scene bg gym
             show lilico awkward at left
             show carrie normal at right
-            u "{i}(I don't know what to say, how on earth can I break the ice with Carrie...? She's just too...icy){/i}"
+            u "{i}(I don't know what to say, how on earth can I break the ice with Carrie...? She's just too...cool){/i}"
             u "{i}(Maybe I'll ask her about her interests? Okay...I'll start with what she did on the weekend...{/i}"
             u "Carrie! What did you do on the weekend?"
             ca "I went to a convention..."
@@ -265,7 +266,7 @@ label start:
             hide lilico normal
             show carrie excited at center with vpunch
             ca "No way...you like cosplay too!?"
-            scene bg black screen
+            scene bg blackscreen
             "You and Carrie talk about cosplaying and she excitedly tells you about her hand-made cosplays. You are glad that Carrie has opened up to you"
             scene bg cafeteria
             #end of dialogue for Carrie
@@ -307,7 +308,7 @@ label start:
         "That lunch, when the entire club gathers together, you ask about the upcoming competition."
         "At that moment, the members froze. A heavy silence hung around the room."
         "Shortly after, Mary-Anne whispers dejectedly."
-        scene bg black screen with dissolve
+        scene bg blackscreen with dissolve
         m "We've been on a losing streak..."
         m "If we don't win this competition...It's over for us"
         m "...And ever since our 5th member left, the club has been on the verge of disbandment..."
@@ -321,7 +322,7 @@ label start:
                 "As the season approaches, the team of rag-tag basketballers transform into an united family, ready to tackle any opponents and balls thrown in their way"
                 "{i}Metaphorically, of course, tackling your opponents is illegal in basketball...{/i}"
                 "..."
-                scene bg black screen
+                scene bg blackscreen
                 "Finally, the timer ends and the results are announced..."
                 "..."
                 "The winners are.."
@@ -329,20 +330,22 @@ label start:
                 "GAKUEN HIGH SCHOOL'S BASKETBALL TEAM!"
                 show lilico happy
                 u "AAAHHH— WE DID IT!!!! WE WON!!!!"
-                scene black screen
+                scene blackScreen
                 "We...did it..?!"
                 "We....won....!"
                 "..."
-                "Carrie nods cooly, a barely noticeable corner of her mouth curving slightly upward. Next to her Pairie mutters under her breath."
+                "Carrie nods cooly, a barely noticeable corner of her mouth curving slightly upward. Next to her Prairie mutters under her breath."
                 "Wow...we really won...even after all that effort?"
                 "Overwhelmed with joy, the team celebrates the win with a tight group hug."
                 "Little did they know, from the back of the audience stand, a resentful individual glared at them silently, eyes burning with hatred."
-                que "You got lucky this time, Pairie..."
+                scene bg bleachers
+                show sixth member
+                que "You got lucky this time, Prairie..."
                 #end of dialogue for comfort ending
                 pass
             "Stay silent":
                 #write dialogue for silent ending here
-                scene bg black screen
+                scene bg blackscreen
                 "You stay silent, joining the rest of the team in their moment of uncomfortable stillness."
                 scene bg gym
                 show jessica angry
@@ -364,16 +367,16 @@ label start:
                 "Later..."
                 show prairie scary
                 pa "Jessica, follow me."
-                scene bg black screen
+                scene bg blackscreen
                 "You silently trail the two as they shuffle down the hallway, their conversation drifting into your ears in jagged snippets."
                 "At that moment, Prairie shoves Jessica into the wall."
                 scene bg hallway
                 show jessica angry
-                j "Stop taking it out on me Pairie..."
+                j "Stop taking it out on me Prairie..."
                 j "We all know why you're acting this way, you just need someone to take your anger out on right?"
                 j "You did this to her too...right?" 
                 j "Don't look shocked, I-i know what happened to HER."
-                scene bg black screen
+                scene bg blackscreen
                 "You hear Prairie's footsteps, she's running away...does that mean...it's true?"
                 #end of dialogue for silent ending
                 pass
@@ -381,10 +384,11 @@ label start:
 
 
     label end:
+        scene bg blackscreen
         "The End"
         "Credits: Made by: Musarrat Mahbub - Lead coder,game formatting, and story editor Norah Shan - Lead story writer and coder, Flora Luu - Lead Artist and story writer"
         "And lastly..."
         "Thank you so much for playing! Hope you enjoyed our game :D"
-
+        "Click to end the game"
     # This ends the game.
     return
