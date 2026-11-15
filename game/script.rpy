@@ -9,7 +9,7 @@ define m = Character("Mary-Anne", color="#fa9d32")
 define j = Character("Jessica", color="#9d2ef2")
 define pa = Character("Prarie", color="#53c95e")
 define ca = Character("Carrie", color="#8a9ad4")
-define que = Character("???") #use when player doesn't know the name of the character yet
+define que = Character("???" color="#000000") #use when player doesn't know the name of the character yet
 
 
 # The game starts here.
