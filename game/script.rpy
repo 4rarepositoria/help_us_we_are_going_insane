@@ -33,7 +33,7 @@ label start:
     u "{i}(Ugh, I'm sooo late! This is sooooo embarassing!){/i}"
 
     scene bg blackscreen
-    play audio "footsteps.mp3"
+    play audio "footsteps.mp3" volume 2.0
     "The sound of rushed footsteps pierced the silent hallways as you sprint through the school corridors, your heart pounding in your chest." 
     "You skid to a halt in front of the classroom door, your hand trembling as you reach for the handle."
     play audio "door.mp3" volume 0.5
@@ -57,10 +57,11 @@ label start:
     scene bg classroom
     show maryanne normal
     que "{i}(I really don't want to talk to her but, if we can't maintain 5 players minimum, we might be disbanded!){/i}"
-    show maryanne stressed
+    show marryanne stressed
     que "{i}(That {b}cannot{/b} happen...not after all we have done to keep it!){/i}"
     
     hide maryanne normal
+    hide marryanne stressed
     show lilico normal
     show maryanne normal at right with easeinright
     que "{i}(I guess I'll have to talk to her...){/i}"
@@ -78,10 +79,10 @@ label start:
     show lilico awkward
     u "Oookay?"
     m "Great, we're practicing at the gym during recess today."
-    show maryanne normal flipped at right
+    show maryanne normal at right
     "Mary-Anne quickly turned around to leave"
     m "I'll see you there, Lilico."
-    hide maryanne normal flipped with easeoutright
+    hide maryanne normal with easeoutright
     show lilico normal at left
     show lilico awkward at center with vpunch
     u "{i}(...Huh!?!?! What the heck just happened!?!?){/i}"
@@ -124,13 +125,13 @@ label start:
     show maryanne normal
     m "...We've met before. I'm Mary-Anne, team captain." 
     m "I'm surprised you actually showed up, I thought you were going to chicken out."
-    scene bg basketballCourt
+    scene bg gym
     "Everyone looked apprehensively at Mary-Anne, and then at Prairie"
     show prairie scary at right
     show maryanne normal at left
     "Prairie glares at Mary-Anne, eyes burning holes into Mary-Anne's head."
     pa "Seriously? Why would you say that?{b} Do you want her to leave too{/b}?"
-    show maryanne stressed at left with vpunch
+    show marryanne stressed at left with vpunch
     m "!!!"
     show lilico awkward
     u "{i}(Ooook...this is tense...){/i}"
@@ -167,7 +168,7 @@ label start:
         "Who do you want to get to know?"
         "Mary-Anne":
         #write dialogue for Mary-Anne here
-            scene bg school hallway
+            scene bg hallway
             "As you're carrying a heavy stack of handouts and cradling your pencil case, you bump into Mary-Anne." 
             "The papers in your hands explode upward and scatter all across the floor! Welp, you were about to seek Mary-Anne in the locker room anyway! Perhaps this is the perfect chance?"
             scene bg scattered papers
@@ -177,9 +178,10 @@ label start:
             "You scramble to collect the papers to your left, Mary-Anne helps you collect the ones that fell to your right before stacking them on top of your pile of hastily gathered papers."
             show lilico awkward
             u "Oh! Thanks..."
+            hide lilico awkward
             show maryanne embarrassed
             m "I mean...It's not like I wanted to help you anyway...hmph..."
-            scene bg school hallway
+            scene bg hallway
             "Despite her provocative tone, Mary-Anne accompanies you as you walk to your desk. Along the way, you make small talk with one another."
             show lilico awkward at right with easeinright
             show maryanne embarrassed at left with easeinleft
@@ -197,7 +199,8 @@ label start:
             show maryanne embarrassed at left
             m "I MEAN- I was just asking! It's not like I wanted to know what you think about me...or anything..."
             u "I-"
-            show maryanne stressed at left
+            hide maryanne embarrassed at left
+            show marryanne stressed at left
             "Oh my gosh! Would you look at the time, I have to go! My sister's probably furious with how long I'm taking...see you tomorrow!"
             scene bg blackscreen
             "You feel like you know Mary-Anne a little better now."
@@ -207,7 +210,7 @@ label start:
             jump bringMenu1 
         "Jessica": 
             #write dialogue for Jessica here
-            scene bg jessica talk
+            scene bg jessica hallway
             "You pull Jessica aside in an attempt to get to know her better. Although she is the quietest member of the team, you had a good feeling you'd warm up to her soon enough..."
             show lilico normal at left
             show jessica normal at right
@@ -237,6 +240,7 @@ label start:
             "You were just thinking about getting to know her more! Something about her demeanour intrigues you greatly..."
             show lilico normal
             u "Hey Carrie!"
+            hide lilico normal
             show carrie normal
             "Carrie nods nonchalantly"
             show lilico normal at left with easeinleft
@@ -282,11 +286,11 @@ label start:
             show prairie normal
             pa "Hey Lilico...Can I talk to you about something?"
             u "Yeah sure...What's up?"
-            show prarie awkward
+            show prairie awkward
             pa "W-w-w-ell, I can't..."
             scene bg locker room
             "Prairie turns away and averts her eyes, she's never shared this with anyone."
-            show prarie awkward at right
+            show prairie awkward at right
             show lilico normal at left
             pa "Well...you know, I'm actually quite hard on myself when I play..."
             pa "I always feel like I'm lacking compared to others...even {b}her{/b}..."
@@ -294,7 +298,7 @@ label start:
             pa "It's been weighing me for the longest time..."
             u "Yeah, I mean, it's normal to feel like that sometimes..."
             u "I'm sure you're just overthinking it. I saw you during practice earlier and honestly, you were amazing!"
-            show prairie normal at left
+            show prairie normal at right
             pa "Thank you so much Lilico. I knew I could trust you with this..."
             pa "{b}Don't tell anyone about our conversation today, okay?{/b}"
             scene bg cafeteria
@@ -309,10 +313,11 @@ label start:
         "At that moment, the members froze. A heavy silence hung around the room."
         "Shortly after, Mary-Anne whispers dejectedly."
         scene bg blackscreen with dissolve
+        show marryanne stressed
         m "We've been on a losing streak..."
         m "If we don't win this competition...It's over for us"
-        m "...And ever since our 5th member left, the club has been on the verge of disbandment..."
-        m "This is our final chance."
+        m "...and ever since our 5th member left, the club has been on the verge of disbandment..."
+        m "{b}This is our final chance.{/b}"
         menu finalchoice:
             "What will you do?"
             "Comfort the members":
@@ -330,7 +335,7 @@ label start:
                 "GAKUEN HIGH SCHOOL'S BASKETBALL TEAM!"
                 show lilico happy
                 u "AAAHHH— WE DID IT!!!! WE WON!!!!"
-                scene blackScreen
+                scene blackscreen
                 "We...did it..?!"
                 "We....won....!"
                 "..."
@@ -349,34 +354,38 @@ label start:
                 "You stay silent, joining the rest of the team in their moment of uncomfortable stillness."
                 scene bg gym
                 show jessica angry
-                j " ...T-this was just like back then..."
+                j " ...T-t-this was just like back then..."
                 j "..."
                 j "when she was still here..."
-                u "{i}(She){/i}"
-                show pairie angry
+                hide jessica angry
+                show lilico awkward
+                u "{i}(She?){/i}"
+                hide lilico awkward
+                show prairie scary
                 pa "DON'T—"
-                show prairie awkward
+                show prairie awkward at left
+                show jessica angry at right
                 pa "I- I mean. Don't think about her. She's already gone."
                 j "...hah..."
                 "Jessica sighs."
                 "If you were just standing a little further away, you wouldn't have noticed it."
-                scene bg black
+                scene bg blackscreen
                 "The door slams open."
                 "Prairie comes into the room, looking unlike her usual cheerful self."
                 scene bg hallway
                 "Later..."
-                show prairie scary
                 pa "Jessica, follow me."
                 scene bg blackscreen
                 "You silently trail the two as they shuffle down the hallway, their conversation drifting into your ears in jagged snippets."
                 "At that moment, Prairie shoves Jessica into the wall."
                 scene bg hallway
-                show jessica angry
+                show jessica angry at left
+                show prairie scary at right
                 j "Stop taking it out on me Prairie..."
                 j "We all know why you're acting this way, you just need someone to take your anger out on right?"
                 j "You did this to her too...right?" 
-                j "Don't look shocked, I-i know what happened to HER."
                 scene bg blackscreen
+                j "Don't look so innocent, I-I know what happened to HER."
                 "You hear Prairie's footsteps, she's running away...does that mean...it's true?"
                 #end of dialogue for silent ending
                 pass
