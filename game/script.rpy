@@ -9,7 +9,7 @@ define m = Character("Mary-Anne", color="#fa9d32")
 define j = Character("Jessica", color="#9d2ef2")
 define pa = Character("Prarie", color="#53c95e")
 define ca = Character("Carrie", color="#8a9ad4")
-define que = Character("???" color="#000000") #use when player doesn't know the name of the character yet
+define que = Character("???", color="#000000") #use when player doesn't know the name of the character yet
 
 
 # The game starts here.
@@ -66,7 +66,7 @@ label start:
     hide lilico normal
 
     show maryanne normal at center with easeinright
-    m "Hey, are you new? What's your name? I'm Marry-Anne."
+    m "Hey, are you new? What's your name? I'm Mary-Anne."
     hide maryanne normal
     show lilico awkward
     u "Oh! Um hey...yeah, I'm Lilico! It's nice to meet you, I can't tell you how nervous I was coming here today, I overslept and now well, I'm late hahaha...*awkward laugh*"
@@ -83,7 +83,7 @@ label start:
     hide maryanne normal flipped with easeoutright
     show lilico normal at left
     show lilico awkward at center with vpunch
-    u "{i}(...Huh!?!?! What the helly just happened!?!?){/i}"
+    u "{i}(...Huh!?!?! What the heck just happened!?!?){/i}"
     u "W-w-ait!! Mary-Anne!! I don't even know where the gym is!!!"
     
     scene bg gym door
@@ -168,7 +168,7 @@ label start:
         #write dialogue for Mary-Anne here
             scene bg school hallway
             "As you're carrying a heavy stack of handouts and cradling your pencil case, you bump into Mary-Anne." 
-            "The papers in your hands explode upward and scatter all across the floor! Welp, you were about to seek Marry-Anne in the locker room anyway! Perhaps this is the perfect chance?"
+            "The papers in your hands explode upward and scatter all across the floor! Welp, you were about to seek Mary-Anne in the locker room anyway! Perhaps this is the perfect chance?"
             scene bg scattered papers
             show maryanne embarrassed
             m "Hey! Watch where you're going!"
@@ -179,7 +179,7 @@ label start:
             show maryanne embarrassed
             m "I mean...It's not like I wanted to help you anyway...hmph..."
             scene bg school hallway
-            "Despite her provocative tone, Marry-Anne accompanies you as you walk to your desk. Along the way, you make small talk with one another."
+            "Despite her provocative tone, Mary-Anne accompanies you as you walk to your desk. Along the way, you make small talk with one another."
             show lilico awkward at right with easeinright
             show maryanne embarrassed at left with easeinleft
             u "So...How did you come to be the club president anyway?"
@@ -306,7 +306,7 @@ label start:
         "After getting to know your teammates, you could confidently say you feel much closer to all...most all of them."
         "That lunch, when the entire club gathers together, you ask about the upcoming competition."
         "At that moment, the members froze. A heavy silence hung around the room."
-        "Shortly after, Marry-Anne whispers dejectedly."
+        "Shortly after, Mary-Anne whispers dejectedly."
         scene bg black screen with dissolve
         m "We've been on a losing streak..."
         m "If we don't win this competition...It's over for us"
