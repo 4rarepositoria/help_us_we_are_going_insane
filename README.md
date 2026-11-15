@@ -1,4 +1,4 @@
-Hello! This is Flora, Norah and Musarrat, the creator of 'Gakuen High School Basketball CLub'! (a mouthful, we know...)
+Hello! This is Flora, Norah and Musarrat, the creator of 'Gakuen High School Basketball Club'! (a mouthful, we know...)
 
 This is about Lilico's journey as she navigates her new school, bonds with her teammates and hopefully secure the win (or not) in the basketball championship. 
 
