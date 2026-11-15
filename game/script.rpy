@@ -326,7 +326,7 @@ label start:
                 scene: gym
                 "…and with that, the rest of the team members immerse themselves into daily practice. They {b}bounced back{/b} and forth, dribbled left and right, and practised shooting day and night."
                 "As the season approaches, the team of rag-tag basketballers transform into an united family, ready to tackle any opponents and balls thrown in their way"
-                "Metaphorically, of course, tackling your opponents is illegal in basketball...)
+                "{i}Metaphorically, of course, tackling your opponents is illegal in basketball...{/i}"
                 "..."
                 "Finally, the timer ends and the results are announced…"
                 "..."
@@ -386,7 +386,7 @@ label start:
         "The End"
         "Credits: Made by: Musarrat Mahbub - Lead coder,game formatting, and story editor Norah Shan - Lead story writer and coder, Flora Luu - Lead Artist and story writer"
         "And lastly..."
-        "Thank you so much for playing! Hope you enjoyed :)"
+        "Thank you so much for playing! Hope you enjoyed our game :D"
 
     # This ends the game.
     return
