@@ -384,7 +384,7 @@ label start:
         jump end
     label end:
         "The End"
-        "Credits: Made by: Musarrat Mahbub - Lead coder and game formatting, Norah Shan - Lead story writer and coder, Flora Luu - Lead Artist and story writer"
+        "Credits: Made by: Musarrat Mahbub - Lead coder,game formatting, and story editor Norah Shan - Lead story writer and coder, Flora Luu - Lead Artist and story writer"
         "And lastly..."
         "Thank you so much for playing! Hope you enjoyed :)"
 
