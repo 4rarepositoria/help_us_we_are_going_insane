@@ -1,7 +1,7 @@
 Hello! This is Flora, Norah and Musarrat, the creator of 'Gakuen High School Basketball Club'! (a mouthful, we know...)
 
 ---------------------------------------------------------------
-##Game Description:##
+**Game Description:**
 
 Lilico just transferred to a new school… and she’s already LATE?! ON HER FIRST DAY?!
 
